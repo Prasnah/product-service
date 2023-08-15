@@ -1,6 +1,6 @@
 package com.prasanna.products.controller;
 
-import com.prasanna.products.Entity.Product;
+import com.prasanna.products.entity.Product;
 import com.prasanna.products.dto.ProductSearchCriteria;
 import com.prasanna.products.dto.ProductStatus;
 import com.prasanna.products.service.ProductService;

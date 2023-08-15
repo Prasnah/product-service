@@ -1,6 +1,6 @@
 package com.prasanna.products.dto;
 
-import com.prasanna.products.Entity.Product;
+import com.prasanna.products.entity.Product;
 import lombok.*;
 
 @Data

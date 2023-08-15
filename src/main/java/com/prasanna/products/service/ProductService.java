@@ -1,9 +1,9 @@
 package com.prasanna.products.service;
 
-import com.prasanna.products.Entity.PendingProduct;
-import com.prasanna.products.Entity.Product;
-import com.prasanna.products.Repository.ApprovalRepository;
-import com.prasanna.products.Repository.ProductRepository;
+import com.prasanna.products.entity.PendingProduct;
+import com.prasanna.products.entity.Product;
+import com.prasanna.products.repository.ApprovalRepository;
+import com.prasanna.products.repository.ProductRepository;
 import com.prasanna.products.config.MessagingConfig;
 import com.prasanna.products.dto.*;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;

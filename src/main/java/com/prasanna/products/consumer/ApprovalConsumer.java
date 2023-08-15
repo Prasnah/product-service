@@ -1,8 +1,8 @@
 package com.prasanna.products.consumer;
 
-import com.prasanna.products.Repository.ApprovalRepository;
+import com.prasanna.products.repository.ApprovalRepository;
 import com.prasanna.products.config.MessagingConfig;
-import com.prasanna.products.Entity.PendingProduct;
+import com.prasanna.products.entity.PendingProduct;
 import com.prasanna.products.dto.ProductStatus;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;

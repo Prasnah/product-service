@@ -1,6 +1,6 @@
-package com.prasanna.products.Repository;
+package com.prasanna.products.repository;
 
-import com.prasanna.products.Entity.PendingProduct;
+import com.prasanna.products.entity.PendingProduct;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

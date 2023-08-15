@@ -1,4 +1,4 @@
-package com.prasanna.products.Entity;
+package com.prasanna.products.entity;
 
 import com.prasanna.products.dto.ProductAvailability;
 import jakarta.persistence.Entity;
