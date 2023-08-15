@@ -16,14 +16,13 @@ import java.util.Date;
 @Entity
 @Builder
 public class PendingProduct {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long productId;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private Long productId;
 
-    @NonNull private String productName;
-    @NonNull private double price;
-    private ProductAvailability productAvailability;
+  @NonNull private String productName;
+  @NonNull private double price;
+  private ProductAvailability productAvailability;
 
-    private Date productArrivalDate;
+  private Date productArrivalDate;
 }
-

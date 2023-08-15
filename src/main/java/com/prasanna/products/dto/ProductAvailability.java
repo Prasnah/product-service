@@ -1,6 +1,6 @@
 package com.prasanna.products.dto;
 
 public enum ProductAvailability {
-    AVAILABLE,
-    NOT_AVAILABLE
+  AVAILABLE,
+  NOT_AVAILABLE
 }

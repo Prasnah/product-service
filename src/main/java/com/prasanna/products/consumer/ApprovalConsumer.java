@@ -13,21 +13,23 @@ import org.springframework.stereotype.Component;
 @Component
 public class ApprovalConsumer {
 
-
   private ApprovalRepository approvalRepository;
+
   @Autowired
-  public ApprovalConsumer(ApprovalRepository approvalRepository){
+  public ApprovalConsumer(ApprovalRepository approvalRepository) {
     this.approvalRepository = approvalRepository;
   }
+
   @RabbitListener(queues = MessagingConfig.QUEUE)
   public void consumeMessageFromQueue(ProductStatus productStatus) {
     log.info("Message Consumed in approval queue - [{}]", productStatus);
-    PendingProduct pendingProduct = PendingProduct.builder()
-        .productName(productStatus.getProduct().getProductName())
-        .price(productStatus.getProduct().getPrice())
-        .productArrivalDate(productStatus.getProduct().getProductArrivalDate())
-        .productAvailability(productStatus.getProduct().getProductAvailability())
-        .build();
+    PendingProduct pendingProduct =
+        PendingProduct.builder()
+            .productName(productStatus.getProduct().getProductName())
+            .price(productStatus.getProduct().getPrice())
+            .productArrivalDate(productStatus.getProduct().getProductArrivalDate())
+            .productAvailability(productStatus.getProduct().getProductAvailability())
+            .build();
     approvalRepository.save(pendingProduct);
   }
 }
